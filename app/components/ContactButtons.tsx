@@ -36,7 +36,13 @@ export default function ContactButtons() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+            d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"
+            fill="currentColor"
+          />
+          <circle cx="9" cy="10" r="1.5" fill="currentColor" />
+          <circle cx="15" cy="10" r="1.5" fill="currentColor" />
+          <path
+            d="M7 14h10c0-1.5-1.5-3-3-3s-2 1.5-2 1.5-1-1.5-3-1.5c-1.5 0-2 1.5-2 3z"
             fill="currentColor"
           />
         </svg>
