@@ -33,11 +33,6 @@ export default function NextStepsSection() {
                       <div className="badge badge-outline badge-sm mt-1">
                         {step.duration}
                       </div>
-                      {step.investment && (
-                        <div className="badge badge-secondary badge-sm mt-1 ml-2">
-                          {step.investment}
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
