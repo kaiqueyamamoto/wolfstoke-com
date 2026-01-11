@@ -7,7 +7,6 @@ export interface Solution {
   useCases: string[];
   technologies: string[];
   timeline: string;
-  investment: string;
   category: string;
 }
 
@@ -18,12 +17,6 @@ export interface ProcessPhase {
   deliverables: string[];
 }
 
-export interface InvestmentRange {
-  label: string;
-  range: string;
-  description: string;
-  examples: string[];
-}
 
 export interface UseCase {
   client: string;
@@ -142,12 +135,12 @@ export const solutions: Solution[] = [
     ],
     technologies: [
       "Backend: C++, Java, Python (baixa latência)",
+      "Trading Platforms: Profit/Neologica, MetaTrader, plataformas proprietárias",
       "Message Bus: FIX, Kafka",
       "Database: PostgreSQL, TimescaleDB, Redis",
       "Frontend: React, WebSocket para real-time",
     ],
     timeline: "6-12 meses",
-    investment: "R$ 500k - R$ 2M",
   },
   {
     id: "retail-trading",
@@ -168,12 +161,12 @@ export const solutions: Solution[] = [
     ],
     technologies: [
       "Frontend: React Native (iOS/Android) + Next.js (Web)",
+      "Trading Platforms: Integração com Profit/Neologica, TradingView, MetaTrader",
       "Backend: Node.js + Python",
       "Real-time: WebSocket, Server-Sent Events",
       "Cache: Redis, Database: PostgreSQL",
     ],
     timeline: "4-8 meses",
-    investment: "R$ 300k - R$ 800k",
   },
   {
     id: "pms",
@@ -200,7 +193,6 @@ export const solutions: Solution[] = [
       "Frontend: React + D3.js",
     ],
     timeline: "6-10 meses",
-    investment: "R$ 400k - R$ 1.2M",
   },
   {
     id: "robo-advisor",
@@ -226,7 +218,6 @@ export const solutions: Solution[] = [
       "Frontend: Next.js, Database: PostgreSQL",
     ],
     timeline: "5-9 meses",
-    investment: "R$ 350k - R$ 900k",
   },
   {
     id: "risk-management",
@@ -253,7 +244,6 @@ export const solutions: Solution[] = [
       "Visualization: Tableau, D3.js",
     ],
     timeline: "8-14 meses",
-    investment: "R$ 600k - R$ 2M",
   },
   {
     id: "compliance",
@@ -279,7 +269,6 @@ export const solutions: Solution[] = [
       "Blockchain: Hyperledger (opcional)",
     ],
     timeline: "6-12 meses",
-    investment: "R$ 500k - R$ 1.5M",
   },
   {
     id: "market-data",
@@ -305,7 +294,6 @@ export const solutions: Solution[] = [
       "API: FastAPI, GraphQL, Cache: Redis",
     ],
     timeline: "6-10 meses",
-    investment: "R$ 400k - R$ 1M",
   },
   {
     id: "algo-trading",
@@ -317,6 +305,7 @@ export const solutions: Solution[] = [
       "Execution: Paper trading, live trading multi-broker",
       "Monitoring: Real-time P&L, performance metrics",
       "Infrastructure: Co-location, low-latency (sub-millisecond)",
+      "Integração com Profit/Neologica, MetaTrader, e outras plataformas",
     ],
     useCases: [
       "Prop trading firms",
@@ -324,13 +313,39 @@ export const solutions: Solution[] = [
       "Asset managers quantitativos",
     ],
     technologies: [
-      "Core Engine: C++ (baixíssima latência)",
-      "Strategy Layer: Python",
+      "Core Engine: C++, Python",
+      "Platforms: Profit/Neologica (NTSL), MetaTrader (MQL), TradingView",
       "Backtesting: Backtrader, Zipline",
       "Database: TimescaleDB, KDB+",
     ],
     timeline: "8-14 meses",
-    investment: "R$ 700k - R$ 2.5M",
+  },
+  {
+    id: "profit-automation",
+    title: "Automações com Profit/Neologica",
+    category: "Plataformas de Trading e Execução",
+    description: "Desenvolvimento de robôs e estratégias automatizadas para a plataforma Profit da Neologica.",
+    features: [
+      "Desenvolvimento de estratégias em NTSL (Nelogica Trading Script Language)",
+      "Criação de robôs personalizados para automação completa",
+      "Integração com múltiplas corretoras através do Profit",
+      "Backtesting e otimização de estratégias",
+      "Gestão de risco automatizada e stop loss inteligente",
+      "Monitoramento e alertas em tempo real",
+    ],
+    useCases: [
+      "Traders que querem automatizar estratégias existentes",
+      "Desenvolvimento de robôs para day trading e swing trading",
+      "Automação de operações em futuros, ações e opções",
+      "Integração de estratégias entre Profit e outros sistemas",
+    ],
+    technologies: [
+      "Linguagem: NTSL (Nelogica Trading Script Language)",
+      "Plataforma: Profit Pro/Ultra da Neologica",
+      "Integrações: APIs de corretoras, Excel, bancos de dados",
+      "Auxiliares: Python para análise de dados, backtesting externo",
+    ],
+    timeline: "1-4 meses",
   },
   {
     id: "marketplace",
@@ -355,7 +370,6 @@ export const solutions: Solution[] = [
       "KYC: Integração com bureaus",
     ],
     timeline: "6-12 meses",
-    investment: "R$ 500k - R$ 1.5M",
   },
   {
     id: "crypto-exchange",
@@ -376,7 +390,6 @@ export const solutions: Solution[] = [
       "Blockchain: Bitcoin Core, Geth",
     ],
     timeline: "10-18 meses",
-    investment: "R$ 1M - R$ 4M",
   },
   {
     id: "tokenization",
@@ -401,7 +414,6 @@ export const solutions: Solution[] = [
       "IPFS: Metadata storage",
     ],
     timeline: "8-14 meses",
-    investment: "R$ 600k - R$ 2M",
   },
   {
     id: "fund-administration",
@@ -426,7 +438,6 @@ export const solutions: Solution[] = [
       "Integration: ESB (Mulesoft)",
     ],
     timeline: "10-16 meses",
-    investment: "R$ 800k - R$ 2.5M",
   },
 ];
 
@@ -522,48 +533,6 @@ export const processPhases: ProcessPhase[] = [
   },
 ];
 
-export const investmentRanges: InvestmentRange[] = [
-  {
-    label: "Projetos Pequenos",
-    range: "R$ 100k - R$ 300k",
-    description: "MVP simples (2-4 meses), funcionalidades limitadas",
-    examples: [
-      "App de educação financeira",
-      "Calculadoras avançadas",
-      "Dashboards específicos",
-    ],
-  },
-  {
-    label: "Projetos Médios",
-    range: "R$ 300k - R$ 800k",
-    description: "Plataforma completa (4-8 meses), features robustas",
-    examples: [
-      "Robo-advisor",
-      "Plataforma de sinais",
-      "Marketplace simples",
-    ],
-  },
-  {
-    label: "Projetos Grandes",
-    range: "R$ 800k - R$ 2M",
-    description: "Sistema empresarial (8-14 meses), alta complexidade",
-    examples: [
-      "Trading desk",
-      "PMS completo",
-      "Fund administration",
-    ],
-  },
-  {
-    label: "Projetos Enterprise",
-    range: "R$ 2M+",
-    description: "Infraestrutura crítica (12-24 meses), missão crítica",
-    examples: [
-      "Exchange",
-      "Core banking",
-      "Clearing system",
-    ],
-  },
-];
 
 export const useCases: UseCase[] = [
   {
@@ -628,12 +597,11 @@ export const nextSteps = [
     step: "2. Workshop de Discovery",
     duration: "Opcional - 2-5 dias",
     description: "Imersão no seu negócio, mapeamento de processos, identificação de requisitos, prototipagem rápida",
-    investment: "R$ 15k - R$ 40k (descontado do projeto)",
   },
   {
     step: "3. Proposta Técnica e Comercial",
     duration: "1-2 semanas",
-    description: "PRD completo, arquitetura proposta, timeline com milestones, investimento detalhado, termos contratuais",
+    description: "PRD completo, arquitetura proposta, timeline com milestones, termos contratuais",
   },
   {
     step: "4. Kick-off",
@@ -656,12 +624,12 @@ export const faqs: FAQ[] = [
   {
     question: "Como funciona o modelo de investimento?",
     answer:
-      "Oferecemos três modelos: Projeto Fechado (escopo definido, preço fixo, pagamento por milestones), Time & Materials (equipe dedicada, cobrança mensal, flexibilidade total) e Híbrido (MVP com preço fixo, depois T&M para evolução).",
+      "Oferecemos três modelos: Projeto Fechado (escopo definido, pagamento por milestones), Time & Materials (equipe dedicada, cobrança mensal, flexibilidade total) e Híbrido (MVP definido, depois T&M para evolução). Entre em contato para conhecer qual modelo se encaixa melhor no seu projeto.",
   },
   {
     question: "Vocês oferecem suporte após o lançamento?",
     answer:
-      "Sim! Oferecemos três níveis: Suporte Básico (incluído 3 meses), Standard (R$ 10k-30k/mês) e Premium (R$ 30k-80k/mês) com SLA diferenciado e suporte dedicado.",
+      "Sim! Oferecemos três níveis: Suporte Básico (incluído 3 meses), Standard e Premium com SLA diferenciado e suporte dedicado. Entre em contato para conhecer os detalhes de cada nível.",
   },
   {
     question: "Como garantem segurança e compliance?",
