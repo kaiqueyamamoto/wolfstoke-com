@@ -1,0 +1,105 @@
+# Wolfstoke Site - Regras do Cursor
+
+## Sobre o Projeto
+
+**Wolfstoke Site** é uma plataforma de tecnologia para investimentos que centraliza acesso a múltiplos mercados mundiais através de parcerias com corretoras regulamentadas. O site apresenta três páginas principais focadas em diferentes aspectos do mercado financeiro.
+
+### Propósito do Projeto
+
+- **Home**: Landing page principal apresentando a plataforma, mercados disponíveis, features, planos e FAQ
+- **Crypto** (`/crypto`): Página focada em trading de criptomoedas, inspirada em plataformas de prop trading
+- **ETFs** (`/etfs`): Página educacional sobre Exchange Traded Funds no Brasil, abordando estrutura, regulação, tributação e estratégias
+
+### Tecnologias e Stack
+
+- **Framework**: Next.js 16.1.1 (App Router)
+- **React**: 19.2.3
+- **TypeScript**: Modo strict ativado
+- **Estilização**: Tailwind CSS 4 com DaisyUI 5.5.14
+- **Fontes**: Geist Sans e Geist Mono (via next/font)
+- **Gerenciador de Pacotes**: pnpm (preferido)
+
+### Design System
+
+- **Tema**: Dark theme com gradientes radiais e glass morphism
+- **Cores Principais**:
+  - Background: `#04060c`
+  - Surface: `#0b1020`
+  - Foreground: `#e5ecff`
+  - Muted: `#98a3b3`
+  - Accent: `#a7ff4f` (verde)
+  - Secondary: `#7c7bff` (roxo)
+- **Padrão Visual**: Glass cards com bordas sutis, gradientes radiais no background
+- **Componentes DaisyUI**: Usando tema "business" com customizações
+
+### Estrutura do Projeto
+
+```
+app/
+├── components/          # Componentes organizados por feature
+│   ├── home/           # Componentes da página inicial
+│   ├── crypto/         # Componentes da página de criptomoedas
+│   ├── etfs/           # Componentes da página de ETFs
+│   └── ContactButtons.tsx  # Componente compartilhado
+├── lib/                # Camada de dados
+│   ├── home/data.ts    # Dados da página home
+│   ├── crypto/data.ts  # Dados da página crypto
+│   └── etfs/data.ts    # Dados da página ETFs
+├── crypto/page.tsx     # Página de criptomoedas
+├── etfs/page.tsx       # Página de ETFs
+├── page.tsx            # Página inicial
+├── layout.tsx          # Layout raiz (fontes e metadados)
+└── globals.css         # Estilos globais e tema Tailwind
+```
+
+### Padrões de Arquitetura
+
+1. **Páginas como Orquestradores**: Páginas devem ter menos de 50 linhas, apenas importando e organizando componentes
+2. **Separação de Dados**: Dados, tipos e constantes ficam em `app/lib/<feature>/data.ts`
+3. **Componentes por Feature**: Componentes organizados em `app/components/<feature>/`
+4. **Nomenclatura**: Componentes em PascalCase com sufixo descritivo (`HeroSection.tsx`, `CryptoHeader.tsx`)
+5. **Import Paths**: Usar alias `@/app/` para imports absolutos
+
+### Mercados Suportados
+
+- Criptomoedas (Bitcoin, Ethereum, altcoins, DeFi)
+- Futuros Americanos (S&P 500, NASDAQ, Dow Jones)
+- Futuros Asiáticos (Nikkei, Hang Seng, SGX, KOSPI)
+- Futuros Brasileiros (Ibovespa, Dólar, Commodities)
+- Fundos Imobiliários (FIIs diversos segmentos)
+- ETFs (Nacionais e internacionais)
+
+### Features Principais
+
+- Dashboard Unificado
+- IA para Carteiras
+- Análise em Tempo Real
+- Alertas Inteligentes
+- Simulador e Backtesting
+- Transparência Total
+
+### Regras de Desenvolvimento
+
+- Sempre usar pnpm para gerenciamento de pacotes
+- Componentes devem ser Server Components por padrão (usar "use client" apenas quando necessário)
+- Um componente por arquivo
+- Export default para componentes, named exports para dados/tipos
+- Manter TypeScript strict mode
+- Seguir convenções de nomenclatura do projeto
+- Documentar mudanças significativas no AGENTS.md
+
+### Ambiente de Desenvolvimento
+
+- Porta padrão: `http://localhost:3000`
+- Comandos principais:
+  - `pnpm dev`: Servidor de desenvolvimento
+  - `pnpm build`: Build de produção
+  - `pnpm start`: Servidor de produção
+  - `pnpm lint`: Executar ESLint
+
+### Observações Importantes
+
+- O projeto NÃO é uma corretora, é uma plataforma de tecnologia
+- Conteúdo em português brasileiro
+- Foco em educação financeira e transparência
+- Integração com corretoras via parcerias
