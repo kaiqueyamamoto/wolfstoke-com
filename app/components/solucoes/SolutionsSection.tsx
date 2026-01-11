@@ -97,10 +97,15 @@ export default function SolutionsSection() {
                     <span className="text-muted">Prazo:</span>
                     <span className="text-foreground font-semibold">{solution.timeline}</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted">Investimento:</span>
-                    <span className="text-accent font-semibold">{solution.investment}</span>
-                  </div>
+                </div>
+
+                <div className="pt-2">
+                  <a
+                    href="#contato"
+                    className="btn btn-accent btn-sm w-full text-black"
+                  >
+                    Entrar em Contato
+                  </a>
                 </div>
               </div>
             </div>
