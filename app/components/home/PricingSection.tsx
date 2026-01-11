@@ -35,12 +35,6 @@ export default function PricingSection() {
                     </div>
                   )}
                 </div>
-                <div className="mt-2">
-                  <span className="text-3xl font-semibold text-accent">
-                    {plan.price}
-                  </span>
-                  <span className="text-muted">{plan.period}</span>
-                </div>
                 <div className="divider" />
                 <ul className="space-y-2 text-sm text-muted">
                   {plan.features.map((feature, index) => (
@@ -57,17 +51,25 @@ export default function PricingSection() {
                         ? "btn-accent"
                         : "btn-outline border-accent/60 text-accent hover:border-accent hover:bg-accent/10"
                     }`}
-                    href="#pricing"
+                    href="#contato"
                   >
-                    {plan.name === "Iniciante" ? "Começar grátis" : "Assinar plano"}
+                    Entrar em Contato
                   </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
-        <div className="mt-8 text-center text-sm text-muted">
-          <p>Garantia de 30 dias: Teste sem risco e cancele quando quiser.</p>
+        <div className="mt-8 glass rounded-2xl border border-accent/40 bg-accent/10 p-6 text-center">
+          <p className="text-lg font-semibold mb-2">
+            Quer saber mais sobre nossos planos?
+          </p>
+          <p className="text-muted mb-4">
+            Entre em contato e vamos encontrar o plano ideal para você.
+          </p>
+          <a href="#contato" className="btn btn-accent text-black">
+            Falar com Especialista
+          </a>
         </div>
       </div>
     </section>
