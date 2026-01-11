@@ -3,6 +3,7 @@ import ContactButtons from "@/app/components/ContactButtons";
 import CTASection from "@/app/components/solucoes/CTASection";
 import FAQSection from "@/app/components/solucoes/FAQSection";
 import HeroSection from "@/app/components/solucoes/HeroSection";
+import IntegrationsSection from "@/app/components/solucoes/IntegrationsSection";
 import InvestmentSection from "@/app/components/solucoes/InvestmentSection";
 import NextStepsSection from "@/app/components/solucoes/NextStepsSection";
 import ProcessSection from "@/app/components/solucoes/ProcessSection";
@@ -27,6 +28,7 @@ export default function SolucoesPage() {
         <HeroSection />
         <WhySection />
         <SolutionsSection />
+        <IntegrationsSection />
         <ProcessSection />
         <InvestmentSection />
         <UseCasesSection />
