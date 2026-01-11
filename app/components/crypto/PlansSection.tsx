@@ -39,9 +39,6 @@ export default function PlansSection() {
                     </div>
                   )}
                 </div>
-                <p className="text-lg font-semibold text-accent">
-                  {plan.price}
-                </p>
                 <p className="text-sm text-muted">{plan.target}</p>
                 <p className="text-sm text-muted">{plan.dd}</p>
                 <div className="divider" />
@@ -54,8 +51,8 @@ export default function PlansSection() {
                   ))}
                 </ul>
                 <div className="pt-2">
-                  <a className="btn btn-accent w-full text-black" href="#plans">
-                    Start challenge
+                  <a className="btn btn-accent w-full text-black" href="#contato">
+                    Entrar em Contato
                   </a>
                 </div>
               </div>
