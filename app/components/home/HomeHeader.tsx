@@ -29,6 +29,9 @@ export default function HomeHeader() {
           <a href="/etfs" className="text-gray-300 hover:text-accent">
             ETFs
           </a>
+          <a href="/solucoes" className="text-gray-300 hover:text-accent">
+            Soluções
+          </a>
           <a href="#faq" className="text-gray-300 hover:text-accent">
             FAQ
           </a>
