@@ -1,6 +1,6 @@
 export default function CTASection() {
   return (
-    <section id="apply" className="px-4 pb-16 md:px-8">
+    <section id="contato" className="px-4 pb-16 md:px-8">
       <div className="mx-auto max-w-5xl rounded-3xl border border-accent/30 bg-accent/10 p-10 text-center shadow-2xl">
         <p className="badge badge-outline border-white/40 bg-white/10 text-white">
           Comece Hoje
