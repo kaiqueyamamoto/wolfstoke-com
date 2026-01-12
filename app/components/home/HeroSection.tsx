@@ -50,38 +50,65 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="glass relative rounded-2xl border border-white/10 p-3 shadow-2xl">
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 via-transparent to-white/5" />
-          <div className="relative space-y-4 p-6">
-            <p className="text-sm uppercase tracking-[0.2em] text-muted">
-              Tecnologia Institucional
-            </p>
-            <div className="space-y-4">
-              <div className="rounded-xl border border-white/10 bg-base-200/40 p-4">
-                <p className="text-muted text-sm">Montagem de Carteiras</p>
-                <p className="text-xl font-semibold text-accent">IA Avançada</p>
-                <p className="text-xs text-muted">
-                  Análise de milhares de cenários para criar a carteira ideal.
-                </p>
+        <div className="glass relative overflow-hidden rounded-2xl border border-white/10 p-6 shadow-2xl">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-secondary/5" />
+          <div className="relative space-y-6">
+            <div>
+              <p className="text-xs uppercase tracking-wider text-accent/80">
+                Tecnologia Institucional
+              </p>
+              <h3 className="mt-2 text-2xl font-semibold text-foreground">
+                Ferramentas Profissionais
+              </h3>
+            </div>
+            
+            <div className="space-y-3">
+              <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-base-200/30 p-4 transition-all hover:border-accent/30 hover:bg-base-200/50">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1 space-y-1">
+                    <p className="text-xs font-medium uppercase tracking-wide text-muted">
+                      Montagem de Carteiras
+                    </p>
+                    <p className="text-lg font-semibold text-accent">IA Avançada</p>
+                    <p className="text-sm leading-relaxed text-muted">
+                      Análise de milhares de cenários para criar a carteira ideal.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="rounded-xl border border-white/10 bg-base-200/40 p-4">
-                <p className="text-muted text-sm">Análise Preditiva</p>
-                <p className="text-xl font-semibold text-accent">Tempo Real</p>
-                <p className="text-xs text-muted">
-                  Análise técnica, fundamentalista e de sentiment em tempo real.
-                </p>
+              
+              <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-base-200/30 p-4 transition-all hover:border-accent/30 hover:bg-base-200/50">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1 space-y-1">
+                    <p className="text-xs font-medium uppercase tracking-wide text-muted">
+                      Análise Preditiva
+                    </p>
+                    <p className="text-lg font-semibold text-accent">Tempo Real</p>
+                    <p className="text-sm leading-relaxed text-muted">
+                      Análise técnica, fundamentalista e de sentiment em tempo real.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="rounded-xl border border-white/10 bg-base-200/40 p-4">
-                <p className="text-muted text-sm">Diversificação</p>
-                <p className="text-xl font-semibold text-accent">Global</p>
-                <p className="text-xs text-muted">
-                  Acesso a todos os principais mercados mundiais.
-                </p>
+              
+              <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-base-200/30 p-4 transition-all hover:border-accent/30 hover:bg-base-200/50">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1 space-y-1">
+                    <p className="text-xs font-medium uppercase tracking-wide text-muted">
+                      Diversificação
+                    </p>
+                    <p className="text-lg font-semibold text-accent">Global</p>
+                    <p className="text-sm leading-relaxed text-muted">
+                      Acesso a todos os principais mercados mundiais.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="rounded-xl border border-accent/50 bg-accent/10 p-4 text-sm text-accent">
-              <p className="font-semibold">Invista como Instituições.</p>
-              <p className="mt-1">Decida como um Lobo.</p>
+            
+            <div className="rounded-xl border border-accent/30 bg-gradient-to-br from-accent/10 to-accent/5 p-4 text-sm">
+              <p className="font-semibold text-accent">Invista como Instituições.</p>
+              <p className="mt-1 text-accent/80">Decida como um Lobo.</p>
             </div>
           </div>
         </div>
