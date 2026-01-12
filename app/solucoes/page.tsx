@@ -7,7 +7,7 @@ import IntegrationsSection from "@/app/components/solucoes/IntegrationsSection";
 import InvestmentSection from "@/app/components/solucoes/InvestmentSection";
 import NextStepsSection from "@/app/components/solucoes/NextStepsSection";
 import ProcessSection from "@/app/components/solucoes/ProcessSection";
-import SolucoesHeader from "@/app/components/solucoes/SolucoesHeader";
+import Header from "@/app/components/Header";
 import SolutionsSection from "@/app/components/solucoes/SolutionsSection";
 import UseCasesSection from "@/app/components/solucoes/UseCasesSection";
 import WhySection from "@/app/components/solucoes/WhySection";
@@ -23,7 +23,7 @@ export default function SolucoesPage() {
   return (
     <div className="relative overflow-hidden text-foreground">
       <BackgroundEffects />
-      <SolucoesHeader />
+      <Header />
       <main className="relative z-10">
         <HeroSection />
         <WhySection />

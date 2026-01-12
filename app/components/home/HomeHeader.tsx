@@ -32,6 +32,9 @@ export default function HomeHeader() {
           <a href="/solucoes" className="text-gray-300 hover:text-accent">
             Soluções
           </a>
+          <a href="/posts" className="text-gray-300 hover:text-accent">
+            Posts
+          </a>
           <a href="#faq" className="text-gray-300 hover:text-accent">
             FAQ
           </a>

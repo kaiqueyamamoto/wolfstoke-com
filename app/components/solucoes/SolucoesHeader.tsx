@@ -22,6 +22,9 @@ export default function SolucoesHeader() {
           <a href="/" className="text-gray-300 hover:text-accent">
             Home
           </a>
+          <a href="/posts" className="text-gray-300 hover:text-accent">
+            Posts
+          </a>
           <a href="#solucoes" className="text-gray-300 hover:text-accent">
             Soluções
           </a>

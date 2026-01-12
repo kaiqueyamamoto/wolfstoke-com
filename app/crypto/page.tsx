@@ -1,7 +1,7 @@
 import BackgroundEffects from "@/app/components/crypto/BackgroundEffects";
 import ComparisonSection from "@/app/components/crypto/ComparisonSection";
 import ContactButtons from "@/app/components/ContactButtons";
-import CryptoHeader from "@/app/components/crypto/CryptoHeader";
+import Header from "@/app/components/Header";
 import CryptoPairsSection from "@/app/components/crypto/CryptoPairsSection";
 import CTASection from "@/app/components/crypto/CTASection";
 import FAQSection from "@/app/components/crypto/FAQSection";
@@ -20,7 +20,7 @@ export default function CryptoPage() {
   return (
     <div className="relative overflow-hidden text-foreground">
       <BackgroundEffects />
-      <CryptoHeader />
+      <Header />
       <main className="relative z-10">
         <HeroSection />
         <FeaturesSection />

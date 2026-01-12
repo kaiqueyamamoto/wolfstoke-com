@@ -25,6 +25,9 @@ export default function ETFsHeader() {
           <a href="/crypto" className="text-gray-300 hover:text-accent">
             Crypto
           </a>
+          <a href="/posts" className="text-gray-300 hover:text-accent">
+            Posts
+          </a>
           <a href="#types" className="text-gray-300 hover:text-accent">
             Tipos
           </a>

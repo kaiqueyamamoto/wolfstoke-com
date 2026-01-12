@@ -9,7 +9,7 @@ import RegulationSection from "@/app/components/etfs/RegulationSection";
 import StrategiesSection from "@/app/components/etfs/StrategiesSection";
 import TaxSection from "@/app/components/etfs/TaxSection";
 import TypesSection from "@/app/components/etfs/TypesSection";
-import ETFsHeader from "@/app/components/etfs/ETFsHeader";
+import Header from "@/app/components/Header";
 
 export const metadata = {
   title: "ETFs no Brasil | Manifesto Educacional | Wolfstoke",
@@ -21,7 +21,7 @@ export default function ETFsPage() {
   return (
     <div className="relative overflow-hidden text-foreground">
       <BackgroundEffects />
-      <ETFsHeader />
+      <Header />
       <main className="relative z-10">
         <HeroSection />
         <MechanismSection />
