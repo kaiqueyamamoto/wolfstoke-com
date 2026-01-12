@@ -17,61 +17,72 @@ export default function Footer() {
         </div>
         <div className="grid grid-cols-2 gap-6 text-sm md:grid-cols-4">
           <div>
-            <p className="mb-2 font-semibold text-gray-400">Produto</p>
-            <div className="space-y-1">
-              <a className="link block text-gray-300 hover:text-accent" href="#markets">
-                Mercados
+            <p className="mb-3 font-semibold text-gray-300">Produto</p>
+            <div className="space-y-2">
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/">
+                Home
               </a>
-              <a className="link block text-gray-300 hover:text-accent" href="#features">
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/crypto">
+                Crypto
+              </a>
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/etfs">
+                ETFs
+              </a>
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/solucoes">
+                Soluções
+              </a>
+            </div>
+          </div>
+          <div>
+            <p className="mb-3 font-semibold text-gray-300">Conteúdo</p>
+            <div className="space-y-2">
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/posts">
+                Posts
+              </a>
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/#features">
                 Recursos
               </a>
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/#markets">
+                Mercados
+              </a>
             </div>
           </div>
           <div>
-            <p className="mb-2 font-semibold text-gray-400">Suporte</p>
-            <div className="space-y-1">
-              <a className="link block text-gray-300 hover:text-accent" href="#faq">
+            <p className="mb-3 font-semibold text-gray-300">Suporte</p>
+            <div className="space-y-2">
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/#faq">
                 FAQ
               </a>
-              <a className="link block text-gray-300 hover:text-accent" href="#">
-                Central de Ajuda
-              </a>
-              <a className="link block text-gray-300 hover:text-accent" href="#">
-                Contato
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="/posts">
+                Blog
               </a>
             </div>
           </div>
           <div>
-            <p className="mb-2 font-semibold text-gray-400">Legal</p>
-            <div className="space-y-1">
-              <a className="link block text-gray-300 hover:text-accent" href="#">
+            <p className="mb-3 font-semibold text-gray-300">Legal</p>
+            <div className="space-y-2">
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="#">
                 Termos de Uso
               </a>
-              <a className="link block text-gray-300 hover:text-accent" href="#">
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="#">
                 Privacidade
               </a>
-            </div>
-          </div>
-          <div>
-            <p className="mb-2 font-semibold text-gray-400">Empresa</p>
-            <div className="space-y-1">
-              <a className="link block text-gray-300 hover:text-accent" href="#">
-                Sobre
-              </a>
-              <a className="link block text-gray-300 hover:text-accent" href="#">
-                Blog
+              <a className="block text-gray-400 transition-colors hover:text-accent" href="#">
+                LGPD
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-8 max-w-6xl border-t border-gray-800 pt-6 text-center text-xs text-gray-400">
-        <p>
+      <div className="mx-auto mt-8 max-w-6xl border-t border-white/5 pt-6 text-center text-xs text-gray-500">
+        <p className="leading-relaxed">
           A Wolfstoke é uma plataforma de tecnologia e não presta serviços de
           assessoria de investimentos. Rentabilidade passada não é garantia de
           rentabilidade futura. Todo investimento envolve riscos.
         </p>
-        <p className="mt-2">© 2025 Wolfstoke. Todos os direitos reservados.</p>
+        <p className="mt-3 text-gray-400">
+          © 2025 Wolfstoke. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   );
