@@ -1,0 +1,158 @@
+# Pares de Criptomoedas Disponíveis
+
+Lista completa de pares de criptomoedas disponíveis para trading na plataforma Wolfstoke.
+
+---
+
+## Pares Internacionais
+
+Total: **105 pares**
+
+- AAVE / USDT
+- ACT / USDT
+- ADA / USDT
+- AEVO / USDT
+- AIXBT / USDT
+- ALGO / USDT
+- ANIME / USDT
+- APE / USDT
+- APT / USDT
+- AR / USDT
+- ARB / USDT
+- ARK / USDT
+- ARKM / USDT
+- ATOM / USDT
+- AVAX / USDT
+- AXS / USDT
+- BCH / USDT
+- BLUR / USDT
+- BNB / USDT
+- BOME / USDT
+- BTC / USDT
+- CFX / USDT
+- COMP / USDT
+- COOKIE / USDT
+- CRV / USDT
+- DOGE / USDT
+- DOGS / USDT
+- DOT / USDT
+- DYDX / USDT
+- DYM / USDT
+- EIGEN / USDT
+- ENA / USDT
+- ENS / USDT
+- ETC / USDT
+- ETH / USDT
+- ETHFI / USDT
+- FIL / USDT
+- FLOKI / USDT
+- FXS / USDT
+- GALA / USDT
+- GMT / USDT
+- GMX / USDT
+- HBAR / USDT
+- ICP / USDT
+- ID / USDT
+- INJ / USDT
+- JASMY / USDT
+- JTO / USDT
+- JUP / USDT
+- KNC / USDT
+- LDO / USDT
+- LEVER / USDT
+- LINK / USDT
+- LTC / USDT
+- MAGIC / USDT
+- ME / USDT
+- MKR / USDT
+- MOVE / USDT
+- NEAR / USDT
+- NEIRO / USDT
+- NOT / USDT
+- OM / USDT
+- OMNI / USDT
+- OP / USDT
+- ORDI / USDT
+- PENDLE / USDT
+- PENGU / USDT
+- PEOPLE / USDT
+- PEPE / USDT
+- PNUT / USDT
+- POL / USDT
+- PYTH / USDT
+- RENDER / USDT
+- RUNE / USDT
+- S / USDT
+- SAGA / USDT
+- SAND / USDT
+- SEI / USDT
+- SHIB / USDT
+- SNX / USDT
+- SOL / USDT
+- STORJ / USDT
+- STRK / USDT
+- STX / USDT
+- SUI / USDT
+- SUN / USDT
+- SUSHI / USDT
+- SYN / USDT
+- TAO / USDT
+- THE / USDT
+- THETA / USDT
+- TIA / USDT
+- TNSR / USDT
+- TON / USDT
+- TRB / USDT
+- TROY / USDT
+- TRUMP / USDT
+- TRX / USDT
+- UNI / USDT
+- VANRY / USDT
+- VET / USDT
+- W / USDT
+- WIF / USDT
+- WLD / USDT
+- WOO / USDT
+- XLM / USDT
+- XRP / USDT
+- YFI / USDT
+- ZIL / USDT
+- ZK / USDT
+- ZRO / USDT
+
+---
+
+## Pares USA
+
+Total: **26 pares**
+
+- AAVE/USDT
+- ADA/USDT
+- APT/USDT
+- AR/USDT
+- ATOM/USDT
+- AVAX/USDT
+- AXS/USDT
+- BCH/USDT
+- BNB/USDT
+- BTC/USDT
+- COMP/USDT
+- CRV/USDT
+- DOT/USDT
+- ETC/USDT
+- ETH/USDT
+- GMX/USDT
+- INJ/USDT
+- LINK/USDT
+- LTC/USDT
+- MKR/USDT
+- SOL/USDT
+- TIA/USDT
+- TON/USDT
+- UNI/USDT
+- XRP/USDT
+- ZRO/USDT
+
+---
+
+*Última atualização: Janeiro 2026*
