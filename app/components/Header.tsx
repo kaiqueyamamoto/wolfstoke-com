@@ -8,7 +8,7 @@ export default function Header() {
 
   const menuItems = [
     { href: "/", label: "Início" },
-    { href: "/dashboard", label: "Plataforma" },
+    { href: "/dashboard", label: "Plataforma", comingSoon: true },
     { href: "/solucoes", label: "Soluções" },
     { href: "/crypto", label: "Mercados" },
     { href: "/posts", label: "Recursos" },
@@ -27,27 +27,35 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {menuItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-sm font-medium text-[--color-muted] hover:text-[--color-foreground]
-                         transition-colors duration-200"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {menuItems.map((item) =>
+              "comingSoon" in item && item.comingSoon ? (
+                <span
+                  key={item.href}
+                  className="text-sm font-medium text-[--color-muted] cursor-not-allowed"
+                >
+                  Em breve
+                </span>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm font-medium text-[--color-muted] hover:text-[--color-foreground]
+                           transition-colors duration-200"
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Link
-              href="/dashboard"
-              className="px-6 py-2.5 bg-[--color-accent] text-black text-sm font-semibold rounded
-                       hover:bg-[--color-secondary] hover:text-white transition-all duration-200 shadow-sm"
+            <span
+              className="px-6 py-2.5 bg-[--color-muted]/20 text-[--color-muted] text-sm font-semibold rounded
+                       cursor-not-allowed"
             >
-            Começar
-          </Link>
+              Em breve
+            </span>
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,25 +78,32 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-[--color-border-subtle] py-6 bg-white">
             <nav className="flex flex-col gap-4">
-              {menuItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base font-medium text-[--color-muted] hover:text-[--color-foreground]
-                           transition-colors duration-200"
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <Link
-                href="/dashboard"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-4 px-6 py-3 bg-[--color-accent] text-black text-center text-sm font-semibold rounded
-                hover:bg-[--color-secondary] hover:text-white"
+              {menuItems.map((item) =>
+                "comingSoon" in item && item.comingSoon ? (
+                  <span
+                    key={item.href}
+                    className="text-base font-medium text-[--color-muted] cursor-not-allowed"
+                  >
+                    Em breve
+                  </span>
+                ) : (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-base font-medium text-[--color-muted] hover:text-[--color-foreground]
+                             transition-colors duration-200"
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
+              <span
+                className="mt-4 px-6 py-3 bg-[--color-muted]/20 text-[--color-muted] text-center text-sm font-semibold rounded
+                cursor-not-allowed inline-block w-full"
               >
-                Começar
-              </Link>
+                Em breve
+              </span>
             </nav>
           </div>
         )}
