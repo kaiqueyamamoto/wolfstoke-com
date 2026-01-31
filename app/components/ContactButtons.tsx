@@ -25,7 +25,7 @@ export default function ContactButtons() {
         href="https://typebot.co/wolfstoke"
         target="_blank"
         rel="noreferrer"
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-[--color-secondary] text-white shadow-lg transition-all duration-200 hover:scale-110 hover:bg-[--color-accent] hover:text-black [&_svg]:shrink-0 [&_svg]:opacity-100"
+        className="group flex h-14 w-14 items-center justify-center rounded-full bg-[--color-secondary] text-white shadow-lg transition-all duration-200 hover:scale-110 hover:bg-[--color-accent] hover:text-black [&_svg]:shrink-0 [&_svg]:fill-white [&_path]:fill-white hover:[&_svg]:fill-black hover:[&_path]:fill-black"
         aria-label="Fale conosco via Typebot"
       >
         <svg
