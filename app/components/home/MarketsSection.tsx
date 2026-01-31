@@ -19,8 +19,7 @@ export default function MarketsSection() {
           {markets.map((market) => (
             <div
               key={market.name}
-              className="bg-white border border-[--color-border-subtle] p-8
-                       hover:border-[--color-border-strong] transition-colors duration-200"
+              className="bg-white border border-[--color-border-subtle] p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-200"
             >
               {/* Title */}
               <h3 className="text-2xl font-bold text-[--color-foreground] mb-4">
