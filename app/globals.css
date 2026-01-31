@@ -2,24 +2,62 @@
 @plugin "daisyui";
 
 @theme inline {
-  --color-background: #04060c;
-  --color-surface: #0b1020;
-  --color-foreground: #e5ecff;
-  --color-muted: #98a3b3;
-  --color-accent: #a7ff4f;
-  --color-secondary: #7c7bff;
+  /* Cores corporativas - fundo claro estilo HaasOnline */
+  --color-background: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-foreground: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-accent: #06b6d4;
+  --color-secondary: #0ea5e9;
+
+  /* Backgrounds e borders corporativos */
+  --color-bg-card: #ffffff;
+  --color-border-subtle: #e5e7eb;
+  --color-border-strong: #d1d5db;
+  --color-accent-blue: #0ea5e9;
+
+  /* Seções escuras alternadas */
+  --color-dark-bg: #1a1a1a;
+  --color-dark-surface: #2d2d2d;
+  --color-dark-text: #ffffff;
+  --color-dark-muted: #9ca3af;
+
+  /* Cores semânticas para dados financeiros */
+  --color-price-up: #10b981;
+  --color-price-up-light: #34d399;
+  --color-price-down: #ef4444;
+  --color-price-down-light: #f87171;
+  --color-price-neutral: #6b7280;
+
+  /* Volume indicators */
+  --color-volume-high: #4a9eff;
+  --color-volume-medium: #6b7bff;
+  --color-volume-low: #4a4a5a;
+
+  /* Status colors */
+  --color-status-new: #ffd700;
+  --color-status-trending: #ff6b35;
+  --color-status-verified: #00c853;
+  --color-status-warning: #ff9500;
+
+  /* Layout dimensions */
+  --width-sidebar: 240px;
+  --height-header: 64px;
+
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: radial-gradient(circle at 20% 20%, rgba(124, 123, 255, 0.15), transparent 35%),
-    radial-gradient(circle at 80% 10%, rgba(167, 255, 79, 0.18), transparent 30%),
-    linear-gradient(180deg, #060912 0%, #03050c 60%, #030406 100%);
+  /* Background corporativo claro estilo HaasOnline */
+  background: #ffffff;
   color: var(--color-foreground);
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
   min-height: 100vh;
   line-height: 1.6;
+  letter-spacing: -0.02em;
+  font-weight: 400;
 }
 
 a {
@@ -27,7 +65,56 @@ a {
 }
 
 .glass {
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos profissionais para homebroker */
+.card-professional {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.card-professional:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.08);
+}
+
+.data-table-professional {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* Número monospace profissional */
+.num {
+  font-family: var(--font-geist-mono), 'SF Mono', Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Scrollbar customizada */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--color-border-strong);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent-blue);
 }

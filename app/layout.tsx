@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Quantum Cipher | Swing Trading Blueprint",
+  title: "Wolfstoke | Plataforma de Investimentos Globais",
   description:
-    "Replica da landing page Quantum Cipher com foco em swing trading, CTA e vídeo de apresentação.",
+    "Plataforma de tecnologia para investimentos. Acesso a criptomoedas, futuros, ETFs, FIIs e mais através de parcerias com corretoras regulamentadas.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="business">
+    <html lang="pt-BR" data-theme="business">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
