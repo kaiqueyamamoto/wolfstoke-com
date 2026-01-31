@@ -33,7 +33,7 @@ export default function SolutionsSection() {
             className={`btn px-4 py-2 text-sm ${
               selectedCategory === null
                 ? "btn-accent text-black"
-                : "btn-outline border-white/20"
+                : "border-2 border-[--color-foreground] text-[--color-foreground] hover:bg-[--color-foreground] hover:text-white border-white/20"
             }`}
           >
             Todas
@@ -45,7 +45,7 @@ export default function SolutionsSection() {
               className={`btn px-4 py-2 text-sm ${
                 selectedCategory === category
                   ? "btn-accent text-black"
-                  : "btn-outline border-white/20"
+                  : "border-2 border-[--color-foreground] text-[--color-foreground] hover:bg-[--color-foreground] hover:text-white border-white/20"
               }`}
             >
               {category.split(" ")[0]}
