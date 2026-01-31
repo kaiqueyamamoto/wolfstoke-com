@@ -2,42 +2,45 @@ import { markets } from "@/app/lib/home/data";
 
 export default function MarketsSection() {
   return (
-    <section id="markets" className="px-4 py-16 md:px-8">
-      <div className="mx-auto max-w-6xl">
-        <div className="text-center">
-          <p className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
-            Mercados Globais
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
-            Acesse Múltiplas Classes de Ativos em{" "}
-            <span className="text-accent">Uma Única Plataforma</span>
+    <section id="markets" className="px-6 md:px-8 py-24 md:py-32 bg-[--color-surface]">
+      <div className="mx-auto max-w-[1200px]">
+        {/* Header */}
+        <div className="max-w-[800px] mx-auto text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-[--color-foreground] mb-6 tracking-tight">
+            Acesso a mercados globais
           </h2>
-          <p className="mt-3 text-muted">
-            O Wolfstoke centraliza acesso aos principais mercados mundiais,
-            eliminando a necessidade de múltiplas plataformas e contas.
+          <p className="text-xl text-[--color-muted] leading-relaxed">
+            Opere múltiplas classes de ativos em uma única plataforma de nível institucional.
           </p>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        {/* Markets Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {markets.map((market) => (
             <div
               key={market.name}
-              className="card glass h-full border border-white/10 bg-base-200/30"
+              className="bg-white border border-[--color-border-subtle] p-8
+                       hover:border-[--color-border-strong] transition-colors duration-200"
             >
-              <div className="card-body gap-3">
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">{market.icon}</span>
-                  <h3 className="card-title text-xl">{market.name}</h3>
-                </div>
-                <p className="text-sm text-muted">{market.description}</p>
-                <ul className="mt-2 space-y-2 text-sm text-muted">
-                  {market.items.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <span className="text-accent">▸</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {/* Title */}
+              <h3 className="text-2xl font-bold text-[--color-foreground] mb-4">
+                {market.name}
+              </h3>
+
+              {/* Description */}
+              <p className="text-base text-[--color-muted] mb-6 leading-relaxed">
+                {market.description}
+              </p>
+
+              {/* Items */}
+              <ul className="space-y-3">
+                {market.items.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-sm text-[--color-muted]">
+                    <span className="text-[--color-foreground] mt-0.5">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

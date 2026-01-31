@@ -2,31 +2,40 @@ import { features } from "@/app/lib/home/data";
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="px-4 py-16 md:px-8">
-      <div className="mx-auto max-w-6xl">
-        <div className="text-center">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
-            Recursos Avançados
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
-            Tecnologia Institucional ao{" "}
-            <span className="text-accent">Alcance de Todos</span>
+    <section id="features" className="px-6 md:px-8 py-24 md:py-32">
+      <div className="mx-auto max-w-[1200px]">
+        {/* Header */}
+        <div className="max-w-[800px] mx-auto text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-[--color-foreground] mb-6 tracking-tight">
+            Recursos de nível institucional
           </h2>
-          <p className="mt-3 text-muted">
-            Ferramentas profissionais que democratizam o acesso a estratégias
-            antes exclusivas de grandes fundos.
+          <p className="text-xl text-[--color-muted] leading-relaxed">
+            Ferramentas de trading profissionais para investidores e instituições.
           </p>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        {/* Features Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="card glass h-full border border-white/10 bg-base-200/30"
+              className="border border-[--color-border-subtle] p-8
+                       hover:border-white transition-colors duration-200"
             >
-              <div className="card-body gap-3">
-                <h3 className="card-title text-xl">{feature.title}</h3>
-                <p className="text-muted">{feature.description}</p>
+              {/* Number */}
+              <div className="text-sm font-bold text-[--color-muted] mb-4 uppercase tracking-wider">
+                Recurso {String(features.indexOf(feature) + 1).padStart(2, '0')}
               </div>
+
+              {/* Title */}
+              <h3 className="text-2xl font-bold text-[--color-foreground] mb-4">
+                {feature.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-base text-[--color-muted] leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

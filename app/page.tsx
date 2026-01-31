@@ -1,4 +1,3 @@
-import BackgroundEffects from "@/app/components/home/BackgroundEffects";
 import ContactButtons from "@/app/components/ContactButtons";
 import CTASection from "@/app/components/home/CTASection";
 import FAQSection from "@/app/components/home/FAQSection";
@@ -11,10 +10,9 @@ import StepsSection from "@/app/components/home/StepsSection";
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden text-foreground">
-      <BackgroundEffects />
+    <div className="relative text-foreground">
       <Header />
-      <main className="relative z-10">
+      <main>
         <HeroSection />
         <MarketsSection />
         <FeaturesSection />

@@ -1,115 +1,89 @@
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
-    <section className="px-4 pb-16 pt-12 md:px-8 md:pt-16">
-      <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:items-center">
-        <div className="space-y-6">
-          <div className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
-            Hub Inteligente de Investimentos Globais
-          </div>
-          <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-            Acesse o Mercado Financeiro Global em{" "}
-            <span className="text-accent">Uma Única Plataforma</span>
+    <section className="px-6 md:px-8 py-24 md:py-32 lg:py-40 bg-white">
+      <div className="mx-auto max-w-[1200px]">
+        {/* Main Content */}
+        <div className="max-w-[900px] mx-auto text-center space-y-8">
+          {/* Headline */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[--color-foreground] leading-[1.1] tracking-tight">
+            Plataforma profissional de trading de criptomoedas
           </h1>
-          <p className="text-lg text-muted">
-            Criptomoedas, Futuros Americanos, Asiáticos e Brasileiros, FIIs e ETFs
-            reunidos em um ecossistema inteligente. Construa carteiras
-            diversificadas com IA, sem precisar de assessor.
+
+          {/* Subheadline */}
+          <p className="text-xl md:text-2xl text-[--color-muted] leading-relaxed max-w-[700px] mx-auto">
+            Soluções de trading automatizado para investidores institucionais e profissionais.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <a className="btn btn-accent text-black" href="#features">
-              Ver Recursos
-            </a>
-            <a
-              className="btn btn-outline border-accent/50 text-accent hover:border-accent hover:bg-accent/10"
-              href="#markets"
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+            <Link
+              href="/dashboard"
+              className="w-full sm:w-auto px-8 py-4 bg-[--color-accent] text-black text-base font-semibold rounded
+                       hover:bg-[--color-secondary] hover:text-white transition-all duration-200 shadow-md hover:shadow-lg"
             >
-              Ver Mercados
-            </a>
+              Começar teste grátis
+            </Link>
+            <Link
+              href="/solucoes"
+              className="w-full sm:w-auto px-8 py-4 border-2 border-[--color-foreground] text-[--color-foreground] text-base font-semibold rounded
+                       hover:bg-[--color-foreground] hover:text-white transition-all duration-200"
+            >
+              Ver soluções
+            </Link>
           </div>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-            <div className="stat glass rounded-box border border-white/5">
-              <div className="stat-title text-muted">Segurança</div>
-              <div className="stat-value text-2xl text-accent">100%</div>
-              <div className="stat-desc text-xs text-muted">
-                Criptografado e seguro
+
+          {/* Trust Indicators */}
+          <div className="grid grid-cols-3 gap-8 pt-16 max-w-[800px] mx-auto">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-[--color-foreground] mb-2">24/7</div>
+              <div className="text-sm text-[--color-muted] uppercase tracking-wider">
+                Análise de mercado
               </div>
             </div>
-            <div className="stat glass rounded-box border border-white/5">
-              <div className="stat-title text-muted">Mercados</div>
-              <div className="stat-value text-2xl text-accent">6+</div>
-              <div className="stat-desc text-xs text-muted">
-                Classes de ativos globais
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-[--color-foreground] mb-2">6+</div>
+              <div className="text-sm text-[--color-muted] uppercase tracking-wider">
+                Mercados globais
               </div>
             </div>
-            <div className="stat glass rounded-box border border-white/5">
-              <div className="stat-title text-muted">IA</div>
-              <div className="stat-value text-2xl text-accent">24/7</div>
-              <div className="stat-desc text-xs text-muted">
-                Análise em tempo real
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-bold text-[--color-foreground] mb-2">100%</div>
+              <div className="text-sm text-[--color-muted] uppercase tracking-wider">
+                Plataforma segura
               </div>
             </div>
           </div>
         </div>
-        <div className="glass relative overflow-hidden rounded-2xl border border-white/10 p-6 shadow-2xl">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-secondary/5" />
-          <div className="relative space-y-6">
-            <div>
-              <p className="text-xs uppercase tracking-wider text-accent/80">
-                Tecnologia Institucional
-              </p>
-              <h3 className="mt-2 text-2xl font-semibold text-foreground">
-                Ferramentas Profissionais
-              </h3>
-            </div>
-            
-            <div className="space-y-3">
-              <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-base-200/30 p-4 transition-all hover:border-accent/30 hover:bg-base-200/50">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex-1 space-y-1">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted">
-                      Montagem de Carteiras
-                    </p>
-                    <p className="text-lg font-semibold text-accent">IA Avançada</p>
-                    <p className="text-sm leading-relaxed text-muted">
-                      Análise de milhares de cenários para criar a carteira ideal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-base-200/30 p-4 transition-all hover:border-accent/30 hover:bg-base-200/50">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex-1 space-y-1">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted">
-                      Análise Preditiva
-                    </p>
-                    <p className="text-lg font-semibold text-accent">Tempo Real</p>
-                    <p className="text-sm leading-relaxed text-muted">
-                      Análise técnica, fundamentalista e de sentiment em tempo real.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="group relative overflow-hidden rounded-xl border border-white/10 bg-base-200/30 p-4 transition-all hover:border-accent/30 hover:bg-base-200/50">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex-1 space-y-1">
-                    <p className="text-xs font-medium uppercase tracking-wide text-muted">
-                      Diversificação
-                    </p>
-                    <p className="text-lg font-semibold text-accent">Global</p>
-                    <p className="text-sm leading-relaxed text-muted">
-                      Acesso a todos os principais mercados mundiais.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="rounded-xl border border-accent/30 bg-gradient-to-br from-accent/10 to-accent/5 p-4 text-sm">
-              <p className="font-semibold text-accent">Invista como Instituições.</p>
-              <p className="mt-1 text-accent/80">Decida como um Lobo.</p>
-            </div>
+
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-3 gap-8 mt-24 max-w-[1100px] mx-auto">
+          <div className="bg-white border border-[--color-border-subtle] p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold text-[--color-foreground] mb-4">
+              Trading automatizado
+            </h3>
+            <p className="text-base text-[--color-muted] leading-relaxed">
+              Algoritmos executam operações 24/7 com base na sua estratégia e parâmetros de risco.
+            </p>
+          </div>
+
+          <div className="bg-white border border-[--color-border-subtle] p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold text-[--color-foreground] mb-4">
+              Gestão de risco
+            </h3>
+            <p className="text-base text-[--color-muted] leading-relaxed">
+              Controles de risco de nível institucional protegem seu capital em qualquer cenário de mercado.
+            </p>
+          </div>
+
+          <div className="bg-white border border-[--color-border-subtle] p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-bold text-[--color-foreground] mb-4">
+              Acesso multi-mercado
+            </h3>
+            <p className="text-base text-[--color-muted] leading-relaxed">
+              Opere criptomoedas, futuros, ETFs e fundos imobiliários em uma única plataforma.
+            </p>
           </div>
         </div>
       </div>

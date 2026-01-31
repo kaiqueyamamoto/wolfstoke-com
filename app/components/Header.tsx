@@ -1,38 +1,97 @@
-import WolfIcon from "@/app/components/WolfIcon";
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const menuItems = [
+    { href: "/", label: "Início" },
+    { href: "/dashboard", label: "Plataforma" },
+    { href: "/solucoes", label: "Soluções" },
+    { href: "/crypto", label: "Mercados" },
+    { href: "/posts", label: "Recursos" },
+  ];
+
   return (
-    <header className="sticky top-0 z-20 bg-black backdrop-blur">
-      <div className="navbar mx-auto max-w-6xl rounded-box px-4 md:px-6">
-        <a href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-accent to-secondary text-black">
-            <WolfIcon size={24} className="text-black" />
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[--color-border-subtle] shadow-sm">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <span className="text-xl font-bold text-[--color-foreground] tracking-tight">
+              WOLFSTOKE
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            {menuItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-[--color-muted] hover:text-[--color-foreground]
+                         transition-colors duration-200"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center gap-4">
+            <Link
+              href="/dashboard"
+              className="px-6 py-2.5 bg-[--color-accent] text-black text-sm font-semibold rounded
+                       hover:bg-[--color-secondary] hover:text-white transition-all duration-200 shadow-sm"
+            >
+            Começar
+          </Link>
           </div>
-          <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-gray-400">
-              Wolfstoke
-            </p>
-            <p className="text-xs text-gray-500">Hub de Investimentos Globais</p>
-          </div>
-        </a>
-        <div className="flex-1" />
-        <div className="hidden items-center gap-3 text-sm md:flex">
-          <a href="/" className="text-gray-300 hover:text-accent">
-            Home
-          </a>
-          <a href="/crypto" className="text-gray-300 hover:text-accent">
-            Crypto
-          </a>
-          <a href="/etfs" className="text-gray-300 hover:text-accent">
-            ETFs
-          </a>
-          <a href="/solucoes" className="text-gray-300 hover:text-accent">
-            Soluções
-          </a>
-          <a href="/posts" className="text-gray-300 hover:text-accent">
-            Posts
-          </a>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 text-[--color-foreground]"
+            aria-label="Abrir menu"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-[--color-border-subtle] py-6 bg-white">
+            <nav className="flex flex-col gap-4">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-base font-medium text-[--color-muted] hover:text-[--color-foreground]
+                           transition-colors duration-200"
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <Link
+                href="/dashboard"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="mt-4 px-6 py-3 bg-[--color-accent] text-black text-center text-sm font-semibold rounded
+                hover:bg-[--color-secondary] hover:text-white"
+              >
+                Começar
+              </Link>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
