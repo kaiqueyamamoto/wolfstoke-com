@@ -62,14 +62,14 @@ export default function Pagination({
         {currentPage > 1 ? (
           <a
             href={getPageUrl(currentPage - 1)}
-            className="btn btn-outline btn-sm border-white/20 text-foreground hover:border-accent hover:bg-accent/10"
+            className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colorsoutline btn-sm border-white/20 text-foreground hover:border-accent hover:bg-accent/10"
           >
             ← Anterior
           </a>
         ) : (
           <button
             disabled
-            className="btn btn-outline btn-sm border-white/10 text-muted opacity-50"
+            className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colorsoutline btn-sm border-white/10 text-muted opacity-50"
           >
             ← Anterior
           </button>
@@ -96,7 +96,7 @@ export default function Pagination({
               <a
                 key={pageNum}
                 href={getPageUrl(pageNum)}
-                className={`btn btn-sm min-w-[2.5rem] border ${
+                className={`px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colorssm min-w-[2.5rem] border ${
                   isActive
                     ? "border-accent bg-accent/20 text-accent"
                     : "border-white/20 bg-transparent text-foreground hover:border-accent/50 hover:bg-accent/10"
@@ -120,14 +120,14 @@ export default function Pagination({
         {currentPage < totalPages ? (
           <a
             href={getPageUrl(currentPage + 1)}
-            className="btn btn-outline btn-sm border-white/20 text-foreground hover:border-accent hover:bg-accent/10"
+            className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colorsoutline btn-sm border-white/20 text-foreground hover:border-accent hover:bg-accent/10"
           >
             Próximo →
           </a>
         ) : (
           <button
             disabled
-            className="btn btn-outline btn-sm border-white/10 text-muted opacity-50"
+            className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colorsoutline btn-sm border-white/10 text-muted opacity-50"
           >
             Próximo →
           </button>
