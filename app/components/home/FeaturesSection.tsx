@@ -19,8 +19,7 @@ export default function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="border border-[--color-border-subtle] p-8
-                       hover:border-white transition-colors duration-200"
+              className="bg-white border border-[--color-border-subtle] p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-200"
             >
               {/* Number */}
               <div className="text-sm font-bold text-[--color-muted] mb-4 uppercase tracking-wider">
