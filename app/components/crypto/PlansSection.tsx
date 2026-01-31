@@ -5,7 +5,7 @@ export default function PlansSection() {
     <section id="plans" className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Planos
           </p>
           <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -19,11 +19,11 @@ export default function PlansSection() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`card glass h-full border ${
+              className={`card bg-white h-full border ${
                 plan.highlight
                   ? "border-accent/70 shadow-[0_20px_60px_rgba(167,255,79,0.25)]"
-                  : "border-white/10"
-              } bg-base-200/30`}
+                  : "border-[--color-border-subtle]"
+              } bg-[--color-surface]`}
             >
               <div className="card-body gap-3">
                 <div className="flex items-center justify-between">
@@ -51,7 +51,7 @@ export default function PlansSection() {
                   ))}
                 </ul>
                 <div className="pt-2">
-                  <a className="btn btn-accent w-full text-black" href="#contato">
+                  <a className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colors shadow-md w-full text-black" href="#contato">
                     Entrar em Contato
                   </a>
                 </div>

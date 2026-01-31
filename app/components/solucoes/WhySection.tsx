@@ -5,7 +5,7 @@ export default function WhySection() {
     <section id="porque" className="px-4 py-16 md:px-8">
       <div className="mx-auto max-w-6xl space-y-16">
         <div className="text-center">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Por Que Soluções Personalizadas?
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -19,7 +19,7 @@ export default function WhySection() {
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Limitações */}
           <div className="space-y-6">
-            <div className="glass rounded-2xl border border-red-500/20 bg-red-500/5 p-6">
+            <div className="bg-white rounded-lg border border-red-500/20 bg-red-500/5 p-6">
               <h3 className="text-2xl font-semibold text-red-400 mb-4">
                 {whyLimitations.title}
               </h3>
@@ -43,7 +43,7 @@ export default function WhySection() {
 
           {/* Vantagens */}
           <div className="space-y-6">
-            <div className="glass rounded-2xl border border-accent/40 bg-accent/10 p-6">
+            <div className="bg-white rounded-lg border border-accent/40 bg-accent/10 p-6">
               <h3 className="text-2xl font-semibold text-accent mb-4">
                 {whyAdvantages.title}
               </h3>

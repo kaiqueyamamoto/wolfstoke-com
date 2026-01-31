@@ -5,7 +5,7 @@ export default function ProcessSection() {
     <section id="processo" className="px-4 py-16 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Nosso Processo
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -20,17 +20,17 @@ export default function ProcessSection() {
           {processPhases.map((phase, index) => (
             <div
               key={index}
-              className="card glass border border-white/10 bg-base-200/30"
+              className="card bg-white border border-[--color-border-subtle] bg-[--color-surface]"
             >
-              <div className="card-body gap-4">
+              <div className="p-6 gap-4">
                 <div className="flex items-start justify-between gap-4 flex-wrap">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="badge badge-accent text-black font-bold">
                         Fase {index + 1}
                       </div>
-                      <h3 className="card-title text-2xl">{phase.title}</h3>
-                      <div className="badge badge-outline">{phase.duration}</div>
+                      <h3 className="text-xl font-bold text-2xl">{phase.title}</h3>
+                      <div className="inline-block px-3 py-1 text-xs font-semibold rounded-full">{phase.duration}</div>
                     </div>
                   </div>
                 </div>

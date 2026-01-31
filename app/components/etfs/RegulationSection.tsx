@@ -5,7 +5,7 @@ export default function RegulationSection() {
     <section className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-10">
-          <p className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-accent/60 bg-accent/10 text-accent">
             Regulação
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -19,10 +19,10 @@ export default function RegulationSection() {
           {regulation.changes.map((change, index) => (
             <div
               key={index}
-              className={`card glass border ${
+              className={`card bg-white border ${
                 index === 1
                   ? "border-accent/70 bg-accent/10"
-                  : "border-white/10 bg-base-200/30"
+                  : "border-[--color-border-subtle] bg-[--color-surface]"
               }`}
             >
               <div className="card-body gap-4">

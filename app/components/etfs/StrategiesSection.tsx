@@ -5,7 +5,7 @@ export default function StrategiesSection() {
     <section id="strategies" className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-10">
-          <p className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-accent/60 bg-accent/10 text-accent">
             Estratégias
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -21,10 +21,10 @@ export default function StrategiesSection() {
           {strategies.map((strategy, index) => (
             <div
               key={index}
-              className={`card glass border ${
+              className={`card bg-white border ${
                 index === 0
                   ? "border-accent/70 bg-accent/10"
-                  : "border-white/10 bg-base-200/30"
+                  : "border-[--color-border-subtle] bg-[--color-surface]"
               }`}
             >
               <div className="card-body gap-4">
@@ -51,7 +51,7 @@ export default function StrategiesSection() {
         </div>
 
         {/* Conclusão */}
-        <div className="glass rounded-2xl border border-accent/40 bg-accent/10 p-6 md:p-8">
+        <div className="bg-white rounded-2xl border border-accent/40 bg-accent/10 p-6 md:p-8">
           <p className="text-lg leading-relaxed text-center max-w-4xl mx-auto">
             {conclusion}
           </p>

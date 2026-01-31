@@ -5,7 +5,7 @@ export default function UseCasesSection() {
     <section id="casos-de-uso" className="px-4 py-16 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Cases de Uso
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -20,14 +20,14 @@ export default function UseCasesSection() {
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className="card glass border border-white/10 bg-base-200/30"
+              className="card bg-white border border-[--color-border-subtle] bg-[--color-surface]"
             >
-              <div className="card-body gap-4">
+              <div className="p-6 gap-4">
                 <div>
                   <div className="badge badge-accent text-black mb-3">
                     {useCase.client}
                   </div>
-                  <h3 className="card-title text-xl mb-3">Desafio</h3>
+                  <h3 className="text-xl font-bold text-xl mb-3">Desafio</h3>
                   <p className="text-muted">{useCase.challenge}</p>
                 </div>
 

@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="px-4 pb-16 pt-12 md:px-8 md:pt-16">
       <div className="mx-auto max-w-6xl">
         <div className="space-y-6 text-center">
-          <div className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
+          <div className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-accent/60 bg-accent/10 text-accent">
             Manifesto Educacional
           </div>
           <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
@@ -14,7 +14,7 @@ export default function HeroSection() {
           <p className="text-xl text-muted max-w-3xl mx-auto">
             {introduction.description}
           </p>
-          <div className="glass rounded-2xl border border-white/10 bg-base-200/30 p-6 md:p-8 mt-8">
+          <div className="bg-white rounded-2xl border border-[--color-border-subtle] bg-[--color-surface] p-6 md:p-8 mt-8">
             <h2 className="text-2xl font-semibold mb-4">O que é um ETF?</h2>
             <p className="text-lg text-muted leading-relaxed">
               {introduction.definition}
@@ -24,7 +24,7 @@ export default function HeroSection() {
             {introduction.benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="glass rounded-xl border border-white/10 bg-base-200/30 p-4"
+                className="bg-white rounded-xl border border-[--color-border-subtle] bg-[--color-surface] p-4"
               >
                 <p className="text-sm text-muted">{benefit}</p>
               </div>

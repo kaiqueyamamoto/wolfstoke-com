@@ -2,7 +2,7 @@ export default function CTASection() {
   return (
     <section id="contato" className="px-4 pb-16 md:px-8">
       <div className="mx-auto max-w-5xl rounded-3xl border border-accent/40 bg-accent/10 p-10 text-center shadow-2xl">
-        <p className="badge badge-outline border-white/40 bg-white/10 text-white">
+        <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-white/40 bg-white/10 text-white">
           Últimas vagas abertas
         </p>
         <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -13,7 +13,7 @@ export default function CTASection() {
           cripto com confiança.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
-          <a className="btn btn-accent btn-lg text-black" href="#steps">
+          <a className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colors shadow-md btn-lg text-black" href="#steps">
             Ver fases
           </a>
           <a

@@ -5,7 +5,7 @@ export default function MechanismSection() {
     <section className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-10">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Como Funciona
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -19,7 +19,7 @@ export default function MechanismSection() {
           {mechanism.process.map((step, index) => (
             <div
               key={index}
-              className="card glass border border-white/10 bg-base-200/30"
+              className="card bg-white border border-[--color-border-subtle] bg-[--color-surface]"
             >
               <div className="card-body gap-3">
                 <div className="badge badge-accent badge-outline text-black/80 w-fit">

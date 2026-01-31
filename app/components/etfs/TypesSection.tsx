@@ -5,7 +5,7 @@ export default function TypesSection() {
     <section id="types" className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-10">
-          <p className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-accent/60 bg-accent/10 text-accent">
             Tipologia
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -20,7 +20,7 @@ export default function TypesSection() {
           {categories.map((category) => (
             <div
               key={category.name}
-              className="card glass border border-white/10 bg-base-200/30"
+              className="card bg-white border border-[--color-border-subtle] bg-[--color-surface]"
             >
               <div className="card-body gap-4">
                 <h3 className="card-title text-2xl">{category.name}</h3>
@@ -34,13 +34,13 @@ export default function TypesSection() {
                   ))}
                 </ul>
                 {category.examples && (
-                  <div className="mt-4 pt-4 border-t border-white/10">
+                  <div className="mt-4 pt-4 border-t border-[--color-border-subtle]">
                     <p className="text-xs text-muted mb-2">Exemplos:</p>
                     <div className="flex flex-wrap gap-2">
                       {category.examples.map((example) => (
                         <span
                           key={example}
-                          className="badge badge-outline text-xs"
+                          className="inline-block px-3 py-1 text-xs font-semibold rounded-full text-xs"
                         >
                           {example}
                         </span>

@@ -1,4 +1,3 @@
-import BackgroundEffects from "@/app/components/crypto/BackgroundEffects";
 import ContactButtons from "@/app/components/ContactButtons";
 import Footer from "@/app/components/home/Footer";
 import HeroSection from "@/app/components/etfs/HeroSection";
@@ -19,10 +18,9 @@ export const metadata = {
 
 export default function ETFsPage() {
   return (
-    <div className="relative overflow-hidden text-foreground">
-      <BackgroundEffects />
+    <div className="relative text-foreground">
       <Header />
-      <main className="relative z-10">
+      <main>
         <HeroSection />
         <MechanismSection />
         <RegulationSection />

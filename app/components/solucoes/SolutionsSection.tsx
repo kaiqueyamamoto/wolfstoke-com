@@ -15,7 +15,7 @@ export default function SolutionsSection() {
     <section id="solucoes" className="px-4 py-16 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Soluções que Desenvolvemos
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -30,7 +30,7 @@ export default function SolutionsSection() {
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           <button
             onClick={() => setSelectedCategory(null)}
-            className={`btn btn-sm ${
+            className={`btn px-4 py-2 text-sm ${
               selectedCategory === null
                 ? "btn-accent text-black"
                 : "btn-outline border-white/20"
@@ -42,7 +42,7 @@ export default function SolutionsSection() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`btn btn-sm ${
+              className={`btn px-4 py-2 text-sm ${
                 selectedCategory === category
                   ? "btn-accent text-black"
                   : "btn-outline border-white/20"
@@ -58,14 +58,14 @@ export default function SolutionsSection() {
           {filteredSolutions.map((solution) => (
             <div
               key={solution.id}
-              className="card glass h-full border border-white/10 bg-base-200/30"
+              className="card bg-white h-full border border-[--color-border-subtle] bg-[--color-surface]"
             >
-              <div className="card-body gap-4">
+              <div className="p-6 gap-4">
                 <div>
-                  <div className="badge badge-outline badge-sm mb-2 text-xs">
+                  <div className="inline-block px-3 py-1 text-xs font-semibold rounded-full badge-sm mb-2 text-xs">
                     {solution.category.split(" ")[0]}
                   </div>
-                  <h3 className="card-title text-xl mb-2">{solution.title}</h3>
+                  <h3 className="text-xl font-bold text-xl mb-2">{solution.title}</h3>
                   <p className="text-sm text-muted">{solution.description}</p>
                 </div>
 
@@ -102,7 +102,7 @@ export default function SolutionsSection() {
                 <div className="pt-2">
                   <a
                     href="#contato"
-                    className="btn btn-accent btn-sm w-full text-black"
+                    className="px-6 py-3 bg-[--color-accent] rounded font-semibold hover:bg-[--color-secondary] transition-colors px-4 py-2 text-sm w-full text-black"
                   >
                     Entrar em Contato
                   </a>

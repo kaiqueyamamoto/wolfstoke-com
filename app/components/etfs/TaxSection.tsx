@@ -9,7 +9,7 @@ export default function TaxSection() {
     <section id="taxation" className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-10">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Tributação
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -24,7 +24,7 @@ export default function TaxSection() {
 
         <div className="space-y-10">
           {/* Renda Variável */}
-          <div className="glass rounded-2xl border border-white/10 bg-base-200/30 p-6 md:p-8">
+          <div className="bg-white rounded-2xl border border-[--color-border-subtle] bg-[--color-surface] p-6 md:p-8">
             <h3 className="text-2xl font-semibold mb-3">
               {taxation.variable.title}
             </h3>
@@ -66,7 +66,7 @@ export default function TaxSection() {
           </div>
 
           {/* Renda Fixa */}
-          <div className="glass rounded-2xl border border-white/10 bg-base-200/30 p-6 md:p-8">
+          <div className="bg-white rounded-2xl border border-[--color-border-subtle] bg-[--color-surface] p-6 md:p-8">
             <h3 className="text-2xl font-semibold mb-3">
               {taxation.fixed.title}
             </h3>
@@ -101,7 +101,7 @@ export default function TaxSection() {
           </div>
 
           {/* Dividendos */}
-          <div className="glass rounded-2xl border border-white/10 bg-base-200/30 p-6 md:p-8">
+          <div className="bg-white rounded-2xl border border-[--color-border-subtle] bg-[--color-surface] p-6 md:p-8">
             <h3 className="text-2xl font-semibold mb-3">
               {taxation.dividends.title}
             </h3>

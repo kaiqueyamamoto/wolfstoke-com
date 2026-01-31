@@ -4,7 +4,7 @@ export default function CTASection() {
   return (
     <section id="contato" className="px-4 py-16 md:px-8">
       <div className="mx-auto max-w-4xl">
-        <div className="glass rounded-2xl border border-accent/40 bg-accent/10 p-8 md:p-12 text-center">
+        <div className="bg-white rounded-lg border border-accent/40 bg-accent/10 p-8 md:p-12 text-center">
           <h2 className="text-3xl font-semibold mb-4 md:text-4xl">
             Pronto para <span className="text-accent">Construir sua Solução</span>?
           </h2>
@@ -16,13 +16,13 @@ export default function CTASection() {
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
                 href={`mailto:${contactInfo.email}`}
-                className="btn btn-accent text-black w-full sm:w-auto"
+                className="px-6 py-3 bg-[--color-accent] rounded font-semibold hover:bg-[--color-secondary] transition-colors text-black w-full sm:w-auto"
               >
                 {contactInfo.email}
               </a>
               <a
                 href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`}
-                className="btn btn-outline border-accent/50 text-accent hover:border-accent hover:bg-accent/10 w-full sm:w-auto"
+                className="px-6 py-3 border-2 border-[--color-foreground] rounded font-semibold hover:bg-[--color-foreground] hover:text-white transition-colors border-accent/50 text-accent hover:border-accent hover:bg-accent/10 w-full sm:w-auto"
                 target="_blank"
                 rel="noopener noreferrer"
               >

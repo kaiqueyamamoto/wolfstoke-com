@@ -5,7 +5,7 @@ export default function ComparisonSection() {
     <section className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-10">
-          <p className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-accent/60 bg-accent/10 text-accent">
             Transparência
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -15,7 +15,7 @@ export default function ComparisonSection() {
             Foco em escala real, sem regras escondidas ou resets forçados.
           </p>
         </div>
-        <div className="glass rounded-3xl border border-white/10 bg-base-200/30 p-6 md:p-8 overflow-hidden">
+        <div className="bg-white rounded-3xl border border-[--color-border-subtle] bg-[--color-surface] p-6 md:p-8 overflow-hidden">
           <div className="overflow-x-auto">
             <table className="table w-full">
               <thead>
@@ -44,7 +44,7 @@ export default function ComparisonSection() {
                       </span>
                     </td>
                     <td className="text-center py-4 text-muted">
-                      <span className="badge badge-outline badge-lg">
+                      <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full badge-lg">
                         {item.others}
                       </span>
                     </td>
@@ -56,7 +56,7 @@ export default function ComparisonSection() {
         </div>
         <div className="mt-6 text-center">
           <a
-            className="btn btn-accent text-black"
+            className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colors shadow-md text-black"
             href="#steps"
           >
             Como funciona

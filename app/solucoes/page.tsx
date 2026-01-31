@@ -1,4 +1,3 @@
-import BackgroundEffects from "@/app/components/solucoes/BackgroundEffects";
 import ContactButtons from "@/app/components/ContactButtons";
 import CTASection from "@/app/components/solucoes/CTASection";
 import FAQSection from "@/app/components/solucoes/FAQSection";
@@ -21,10 +20,9 @@ export const metadata = {
 
 export default function SolucoesPage() {
   return (
-    <div className="relative overflow-hidden text-foreground">
-      <BackgroundEffects />
+    <div className="relative text-foreground">
       <Header />
-      <main className="relative z-10">
+      <main>
         <HeroSection />
         <WhySection />
         <SolutionsSection />

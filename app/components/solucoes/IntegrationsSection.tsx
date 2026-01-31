@@ -9,7 +9,7 @@ export default function IntegrationsSection() {
     <section id="integracao-trading" className="px-4 py-16 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Integrações
           </p>
           <h2 className="mt-4 text-3xl font-semibold md:text-4xl">
@@ -29,13 +29,13 @@ export default function IntegrationsSection() {
             {tradingPlatforms.map((platform, index) => (
               <div
                 key={index}
-                className="card glass border border-white/10 bg-base-200/30"
+                className="card bg-white border border-[--color-border-subtle] bg-[--color-surface]"
               >
-                <div className="card-body gap-4">
+                <div className="p-6 gap-4">
                   <div>
-                    <h4 className="card-title text-xl mb-2">{platform.name}</h4>
+                    <h4 className="text-xl font-bold text-xl mb-2">{platform.name}</h4>
                     <p className="text-sm text-muted mb-3">{platform.description}</p>
-                    <div className="badge badge-outline badge-sm mb-2">
+                    <div className="inline-block px-3 py-1 text-xs font-semibold rounded-full badge-sm mb-2">
                       {platform.market}
                     </div>
                   </div>
@@ -83,13 +83,13 @@ export default function IntegrationsSection() {
             {integrations.map((integration, index) => (
               <div
                 key={index}
-                className="card glass border border-white/10 bg-base-200/30"
+                className="card bg-white border border-[--color-border-subtle] bg-[--color-surface]"
               >
-                <div className="card-body gap-4">
+                <div className="p-6 gap-4">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <h4 className="card-title text-xl">{integration.platform}</h4>
-                      <span className="badge badge-outline badge-sm">
+                      <h4 className="text-xl font-bold text-xl">{integration.platform}</h4>
+                      <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full badge-sm">
                         {integration.type}
                       </span>
                     </div>
@@ -124,7 +124,7 @@ export default function IntegrationsSection() {
             {integrationBenefits.items.map((item, index) => (
               <div
                 key={index}
-                className="glass rounded-xl border border-white/10 bg-base-200/30 p-4"
+                className="bg-white rounded-xl border border-[--color-border-subtle] bg-[--color-surface] p-4"
               >
                 <h4 className="font-semibold text-accent mb-2">{item.benefit}</h4>
                 <p className="text-sm text-muted">{item.description}</p>
@@ -134,14 +134,14 @@ export default function IntegrationsSection() {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 glass rounded-2xl border border-accent/40 bg-accent/10 p-8 text-center">
+        <div className="mt-12 bg-white rounded-lg border border-accent/40 bg-accent/10 p-8 text-center">
           <h3 className="text-2xl font-semibold mb-4">
             Quer automatizar suas estratégias?
           </h3>
           <p className="text-lg text-muted mb-6">
             Entre em contato e vamos desenvolver a solução ideal para sua plataforma de trading.
           </p>
-          <a href="#contato" className="btn btn-accent text-black">
+          <a href="#contato" className="px-6 py-3 bg-[--color-accent] rounded font-semibold hover:bg-[--color-secondary] transition-colors text-black">
             Falar com Especialista
           </a>
         </div>

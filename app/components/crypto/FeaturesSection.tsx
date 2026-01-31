@@ -5,7 +5,7 @@ export default function FeaturesSection() {
     <section className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             Por que Hydra
           </p>
           <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -16,7 +16,7 @@ export default function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="card glass h-full border border-white/10 bg-base-200/30"
+              className="card bg-white h-full border border-[--color-border-subtle] bg-[--color-surface]"
             >
               <div className="card-body gap-3">
                 <h3 className="card-title text-xl">{feature.title}</h3>

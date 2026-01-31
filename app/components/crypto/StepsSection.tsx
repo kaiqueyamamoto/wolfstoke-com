@@ -6,7 +6,7 @@ export default function StepsSection() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
+            <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-accent/60 bg-accent/10 text-accent">
               Como funciona
             </p>
             <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -28,7 +28,7 @@ export default function StepsSection() {
               </div>
             ))}
           </div>
-          <div className="glass rounded-2xl border border-white/10 p-8">
+          <div className="bg-white rounded-2xl border border-[--color-border-subtle] p-8">
             <h3 className="text-xl font-semibold">Regras-chave</h3>
             <ul className="mt-4 space-y-3 text-muted">
               <li>• Drawdown diário 4% / máximo 8%.</li>

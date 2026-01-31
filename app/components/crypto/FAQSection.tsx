@@ -5,7 +5,7 @@ export default function FAQSection() {
     <section id="faq" className="px-4 py-14 md:px-8">
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
-          <p className="badge badge-outline border-secondary/60 bg-secondary/10 text-secondary">
+          <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-secondary/60 bg-secondary/10 text-secondary">
             FAQ
           </p>
           <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
@@ -19,7 +19,7 @@ export default function FAQSection() {
           {faqs.map((faq) => (
             <div
               key={faq.q}
-              className="collapse collapse-arrow glass border border-white/10 bg-base-200/30"
+              className="collapse collapse-arrow bg-white border border-[--color-border-subtle] bg-[--color-surface]"
             >
               <input type="checkbox" />
               <div className="collapse-title text-lg font-medium">

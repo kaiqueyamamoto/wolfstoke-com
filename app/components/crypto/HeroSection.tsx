@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="px-4 pb-12 pt-10 md:px-8 md:pt-16">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="space-y-6">
-          <div className="badge badge-outline border-accent/60 bg-accent/10 text-accent">
+          <div className="inline-block px-3 py-1 text-xs font-semibold rounded-full border-accent/60 bg-accent/10 text-accent">
             Crypto Prop • Sem limite
           </div>
           <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
@@ -19,7 +19,7 @@ export default function HeroSection() {
             direto.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a className="btn btn-accent text-black" href="#steps">
+            <a className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colors shadow-md text-black" href="#steps">
               Ver fases
             </a>
             <a
@@ -33,7 +33,7 @@ export default function HeroSection() {
             {metrics.map((metric) => (
               <div
                 key={metric.label}
-                className="glass rounded-xl border border-white/10 p-4"
+                className="bg-white rounded-xl border border-[--color-border-subtle] p-4"
               >
                 <p className="text-sm text-muted">{metric.label}</p>
                 <p className="text-xl font-semibold">{metric.value}</p>
@@ -41,14 +41,14 @@ export default function HeroSection() {
             ))}
           </div>
         </div>
-        <div className="glass relative rounded-2xl border border-white/10 p-6 shadow-2xl">
+        <div className="bg-white relative rounded-2xl border border-[--color-border-subtle] p-6 shadow-2xl">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/5 via-transparent to-white/5" />
           <div className="relative space-y-4">
             <p className="text-sm uppercase tracking-[0.2em] text-muted">
               Segurança e transparência
             </p>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <div className="rounded-xl border border-white/10 bg-base-200/40 p-4">
+              <div className="rounded-xl border border-[--color-border-subtle] bg-base-200/40 p-4">
                 <p className="text-muted text-sm">Proteções</p>
                 <p className="text-xl font-semibold text-accent">
                   Max loss 8%
@@ -57,21 +57,21 @@ export default function HeroSection() {
                   Trailing drawdown baseado no saldo inicial.
                 </p>
               </div>
-              <div className="rounded-xl border border-white/10 bg-base-200/40 p-4">
+              <div className="rounded-xl border border-[--color-border-subtle] bg-base-200/40 p-4">
                 <p className="text-muted text-sm">News trading</p>
                 <p className="text-xl font-semibold text-accent">Liberado</p>
                 <p className="text-xs text-muted">
                   Sem bloqueios para CPI, FOMC e eventos cripto.
                 </p>
               </div>
-              <div className="rounded-xl border border-white/10 bg-base-200/40 p-4">
+              <div className="rounded-xl border border-[--color-border-subtle] bg-base-200/40 p-4">
                 <p className="text-muted text-sm">Pagamentos</p>
                 <p className="text-xl font-semibold text-accent">Semanais</p>
                 <p className="text-xs text-muted">
                   Solicite após atingir critérios de consistência.
                 </p>
               </div>
-              <div className="rounded-xl border border-white/10 bg-base-200/40 p-4">
+              <div className="rounded-xl border border-[--color-border-subtle] bg-base-200/40 p-4">
                 <p className="text-muted text-sm">Plataformas</p>
                 <p className="text-xl font-semibold text-accent">
                   MT5, cTrader
