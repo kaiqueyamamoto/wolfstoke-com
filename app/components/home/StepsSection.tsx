@@ -20,8 +20,7 @@ export default function StepsSection() {
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="border border-[--color-border-subtle] p-8
-                       hover:border-white transition-colors duration-200"
+              className="bg-white border border-[--color-border-subtle] p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-200"
             >
               {/* Step Number */}
               <div className="text-sm font-bold text-[--color-muted] mb-4 uppercase tracking-wider">
@@ -42,7 +41,7 @@ export default function StepsSection() {
         </div>
 
         {/* Bottom CTA Card */}
-        <div className="border border-[--color-border-subtle] p-12 text-center max-w-[900px] mx-auto">
+        <div className="bg-white border border-[--color-border-subtle] p-12 text-center max-w-[900px] mx-auto rounded-lg shadow-lg">
           <h3 className="text-3xl font-bold text-[--color-foreground] mb-4">
             Pronto para começar?
           </h3>
@@ -50,17 +49,16 @@ export default function StepsSection() {
             Crie sua conta e comece a montar sua carteira diversificada com ferramentas profissionais de trading.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/dashboard"
-              className="w-full sm:w-auto px-8 py-4 bg-white text-black text-base font-semibold
-                       hover:bg-gray-200 transition-all duration-200"
+            <span
+              className="w-full sm:w-auto px-8 py-4 bg-[--color-muted]/20 text-[--color-muted] text-base font-semibold rounded
+                       cursor-not-allowed inline-block text-center"
             >
-              Começar a operar
-            </Link>
+              Em breve
+            </span>
             <Link
               href="#features"
-              className="w-full sm:w-auto px-8 py-4 border-2 border-white text-[--color-foreground] text-base font-semibold
-                       hover:bg-white hover:text-black transition-all duration-200"
+              className="w-full sm:w-auto px-8 py-4 border-2 border-[--color-foreground] text-[--color-foreground] text-base font-semibold rounded
+                       hover:bg-[--color-foreground] hover:text-white transition-all duration-200"
             >
               Ver recursos
             </Link>
