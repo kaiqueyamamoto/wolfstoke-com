@@ -19,14 +19,17 @@ export default function HeroSection() {
             direto.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colors shadow-md text-black" href="#steps">
+            <a
+              href="#steps"
+              className="px-6 py-3 rounded font-semibold shadow-md transition-colors bg-[--color-accent] text-black hover:bg-[--color-secondary] hover:text-white"
+            >
               Ver fases
             </a>
             <a
-              className="btn btn-outline border-accent/50 text-accent hover:border-accent hover:bg-accent/10"
               href="#steps"
+              className="px-6 py-3 rounded font-semibold transition-colors border-2 border-[--color-accent] text-[--color-foreground] hover:border-[--color-secondary] hover:bg-[--color-secondary]/10 hover:text-[--color-secondary]"
             >
-              Ver fases
+              Como funciona
             </a>
           </div>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
@@ -51,7 +54,7 @@ export default function HeroSection() {
               <div className="rounded-xl border border-[--color-border-subtle] bg-base-200/40 p-4">
                 <p className="text-muted text-sm">Proteções</p>
                 <p className="text-xl font-semibold text-accent">
-                  Max loss 8%
+                  Max loss 20%
                 </p>
                 <p className="text-xs text-muted">
                   Trailing drawdown baseado no saldo inicial.
@@ -74,7 +77,7 @@ export default function HeroSection() {
               <div className="rounded-xl border border-[--color-border-subtle] bg-base-200/40 p-4">
                 <p className="text-muted text-sm">Plataformas</p>
                 <p className="text-xl font-semibold text-accent">
-                  MT5, cTrader
+                  MT5, cTrader, Autotrader
                 </p>
                 <p className="text-xs text-muted">
                   Conecte via broker parceiro, sem marcação oculta.
