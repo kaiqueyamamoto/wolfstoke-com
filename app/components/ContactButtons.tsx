@@ -5,7 +5,7 @@ export default function ContactButtons() {
         href="https://wa.me/5511999999999"
         target="_blank"
         rel="noreferrer"
-        className="btn btn-circle btn-accent text-black shadow-lg hover:scale-110 transition-transform"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[--color-accent] text-black shadow-lg transition-all duration-200 hover:scale-110 hover:bg-[--color-secondary] hover:text-white"
         aria-label="Fale conosco no WhatsApp"
       >
         <svg
@@ -25,26 +25,19 @@ export default function ContactButtons() {
         href="https://typebot.co/wolfstoke"
         target="_blank"
         rel="noreferrer"
-        className="btn btn-circle btn-secondary text-black shadow-lg hover:scale-110 transition-transform"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[--color-secondary] text-white shadow-lg transition-all duration-200 hover:scale-110 hover:bg-[--color-accent] hover:text-black [&_svg]:shrink-0 [&_svg]:opacity-100"
         aria-label="Fale conosco via Typebot"
       >
         <svg
-          width="24"
-          height="24"
+          width="26"
+          height="26"
           viewBox="0 0 24 24"
-          fill="none"
+          fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
+          aria-hidden
+          className="shrink-0"
         >
-          <path
-            d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"
-            fill="currentColor"
-          />
-          <circle cx="9" cy="10" r="1.5" fill="currentColor" />
-          <circle cx="15" cy="10" r="1.5" fill="currentColor" />
-          <path
-            d="M7 14h10c0-1.5-1.5-3-3-3s-2 1.5-2 1.5-1-1.5-3-1.5c-1.5 0-2 1.5-2 3z"
-            fill="currentColor"
-          />
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" />
         </svg>
       </a>
     </div>
