@@ -18,13 +18,12 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-            <Link
-              href="/dashboard"
-              className="w-full sm:w-auto px-8 py-4 bg-[--color-accent] text-black text-base font-semibold rounded
-                       hover:bg-[--color-secondary] hover:text-white transition-all duration-200 shadow-md hover:shadow-lg"
+            <span
+              className="w-full sm:w-auto px-8 py-4 bg-[--color-muted]/20 text-[--color-muted] text-base font-semibold rounded
+                       cursor-not-allowed inline-block text-center"
             >
-              Começar teste grátis
-            </Link>
+              Em breve
+            </span>
             <Link
               href="/solucoes"
               className="w-full sm:w-auto px-8 py-4 border-2 border-[--color-foreground] text-[--color-foreground] text-base font-semibold rounded
