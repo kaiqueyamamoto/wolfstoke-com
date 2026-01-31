@@ -14,7 +14,7 @@ function formatDate(dateString: string): string {
 
 function PostCard({ post }: { post: BlogPost }) {
   return (
-    <article className="glass group relative overflow-hidden rounded-xl border border-white/10 p-6 transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/10">
+    <article className="bg-white group relative overflow-hidden rounded-xl border border-white/10 p-6 transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/10">
       <div className="flex flex-col gap-4">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
@@ -107,7 +107,7 @@ export default function PostsListSection() {
             </h2>
           )}
           {displayPosts.length === 0 ? (
-            <div className="glass rounded-xl border border-white/10 p-12 text-center">
+            <div className="bg-white rounded-xl border border-white/10 p-12 text-center">
               <p className="text-muted">
                 Nenhum post encontrado nesta categoria.
               </p>
