@@ -17,7 +17,7 @@ export default function CTASection() {
             Ver fases
           </a>
           <a
-            className="btn btn-outline btn-lg border-white/60 text-white hover:border-white hover:bg-white/10"
+            className="px-6 py-3 bg-[--color-accent] text-white rounded font-semibold hover:bg-[--color-secondary] transition-colorsoutline btn-lg border-white/60 text-white hover:border-white hover:bg-white/10"
             href="#faq"
           >
             Ler regras
